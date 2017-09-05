@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 VERSION = '2.0.1'
 
@@ -10,12 +10,10 @@ URL = "None"
 DESCRIPTION = "None"
 LONG_DESCRIPTION = "None"
 
-SCRIPTS = ['scripts/acme_tiny']
-
 setup(
     name=DISTNAME,
     version=VERSION,
-    scripts=SCRIPTS,
+    packages = find_packages(),
     license=LICENSE,
     url=URL,
     maintainer_email=EMAIL,
